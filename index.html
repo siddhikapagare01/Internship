@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>User Login | Admin User</title>
+        
+    </head>
+
+    <style>
+            body {
+                font-family: Arial, sans-serif;
+                max-width: 400px;
+                margin: auto;
+                padding: 20px;
+            }
+            section {
+                margin-bottom: 15px;
+            }
+            input[type="text"],
+            input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-top:5px;
+        }
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+
+    <body>
+        <form
+            action="/check-login.html"
+            method="post"
+            enctype="application/x-www-form-urlencoded"
+        >
+            <section>
+                <label for="user name">User Name</label>
+                <input type="text" placeholder="Enter username" required /> 
+            </section>
+
+            <section>
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter password" required /> 
+            </section>
+
+            <section> 
+                <a href="/forgot-username.html">Forgot User Name?</a>
+            </section>
+
+            <section> 
+                <a href="/forgot-password.html">Forgot Password?</a>
+            </section>
+
+            <section>
+                <input type="checkbox" id="remember" name="remember" />
+                <label for="remember">Remember Me</label>
+            </section>
+
+            <section>
+                <input type="checkbox" onclick="togglePassword()"> Show Password
+            </section>
+
+            <script>
+                function togglePassword() 
+                {
+                    const pwd = document.getElementByID("password");
+                    ped.type = pwd.type === "password"? "text" : "password";                
+                }
+            </script>
+
+            <section>
+                <p>Don't have an account? <a href="/register.html">Register here</a></p>
+            </section>
+
+            <section>
+                <button type="submit">Submit</button>
+            </section>              
+        </form>   
+    </body>
+</html>
