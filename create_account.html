@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+    </head>
+    <body>
+        <form
+            action="/check-login.html"
+            method="post"
+            enctype="application/x-www-form-urlencoded"
+        >
+        <section>
+            <label for="">Full Name - </label>
+            <input type="text" placeholder="Enter full name" required /> 
+        </section>
+
+        <section>
+            <label for="">Contact - </label>
+            <input type="number" placeholder="Mobile Number" required /> 
+        </section>
+
+        <section>
+            <label for="">Whatsapp Number - </label>
+            <input type="number" placeholder="Whatsapp Number" required /> 
+        </section>
+
+        <section>
+            <label for="">Email - </label>
+            <input type="text" placeholder="Enter Email" required /> 
+        </section>
+
+        <section>
+            <label for="">DOB - </label>
+            <input type="date" placeholder="Enter DOB" required /> 
+        </section>
+
+        <section>
+            <label for="">male</label>
+            <input id="male"type="radio" name="gender" /> 
+        </section>
+
+        <section>
+            <label for="">female</label>
+            <input id="female"type="radio" name="gender" /> 
+        </section>
+
+        <section>
+            <label for="">transgender</label>
+            <input id="transgenger"type="radio" name="gender" /> 
+        </section>
+
+        <section>
+            <label for="">language</label>
+        <section>           
+            <input type="checkbox" checked disabled name="language"/>
+            <label for="">English</label>
+        </section>
+        <section>
+            <input type="checkbox" name="language"/>
+            <label for="">Marathi</label>
+        </section>
+        <section>
+            <input type="checkbox" name="language"/>
+            <label for="">Hindi</label>
+        </section>
+        <section>
+            <label for="address">Address</label><br/>
+            <textarea id="address" name="address" rows="4" cols="30" placeholder="Enter your address" required></textarea>
+        </section> 
+
+        <section>
+            <label for="Relationship">Relationship Status - </label>
+            <select name="relationship" id="relationship" required>
+                <option value="">---Select---</option>
+                <option value="Father" selected>Father</option>  <!--Default selected-->
+                <option value="Mother">Mother</option>
+                <option value="Sister">Sister</option>
+                <option value="Brother">Brother</option>
+            </select>   
+        </section>
+
+        <section>
+            <button type="Submit">Submit</button>
+        </section>
+    </body>
+</html>
